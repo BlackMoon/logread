@@ -1,0 +1,122 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PALETTE DIALOGEX 0, 0, 269, 103
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Палетка"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "scale",IDB_SCALE,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,188,14,14,13
+    PUSHBUTTON      "Расчет",IDB_RUN,220,7,44,14,WS_DISABLED
+    EDITTEXT        IDE_SCALE,12,14,166,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_PTS,12,48,166,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "pts",IDB_PTS,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,188,48,14,13
+    EDITTEXT        IDE_OUT,12,82,166,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Шкала",IDC_STATIC,6,3,208,29
+    GROUPBOX        "Точки",IDC_STATIC,6,37,208,29
+    GROUPBOX        "Результат",IDC_STATIC,6,71,208,29
+    CONTROL         "out",IDB_OUT,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,188,82,14,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PALETTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_OPEN                BITMAP                  "res\\open14.bmp"
+IDB_SAVE                BITMAP                  "res\\save14.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PALETTE             ICON                    "res\\stat.ico"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
