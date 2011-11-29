@@ -1,0 +1,17 @@
+bin\Debug\bars_license.exe
+bin\Debug\bars_license.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\bars_license.Form1.resources
+obj\Debug\bars_license.Properties.Resources.resources
+obj\Debug\bars_license.csproj.GenerateResource.Cache
+obj\Debug\bars_license.exe
+obj\Debug\bars_license.pdb
+bin\Release\bars_license.exe
+bin\Release\bars_license.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\bars_license.Form1.resources
+obj\Release\bars_license.Properties.Resources.resources
+obj\Release\bars_license.csproj.GenerateResource.Cache
+obj\Release\bars_license.exe
+obj\Release\bars_license.pdb
+obj\Debug\bars_license.exe.licenses
