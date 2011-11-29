@@ -15,7 +15,7 @@ bool regX::match(char* buf, const int size)
 			break;
 		case 1: 
 			pdest = strstr(buf, words[0]);
-			// chech begining
+			// check begining
 			if ((quants[index] == '^') && (!wordBegins)) res = ((size_t)pdest == 0);
 			// check ending
 			else {
