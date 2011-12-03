@@ -123,7 +123,7 @@ bool CLogReader::open(const char* filename)
 	
 	DWORD dwFileSizeHigh;
 	qwFileSize = GetFileSize(hFile, &dwFileSizeHigh);
-	qwFileSize += (((__int64)dwFileSizeHigh) << 32); 
+	qwFileSize += (((__int64)dwFileSizeHigh) << 32);
 	qwOffset = 0;
 	CloseHandle(hFile);
 
