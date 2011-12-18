@@ -1,0 +1,95 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="65DCDB73-3F6F-442D-8869-9786A6BA1A61">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="БраузерОтчетныхФорм" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="БраузерОтчетныхФорм" RunPostBuildEvent="OnBuildSuccess" StartupObject="">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="bin\Debug\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="bin\Release\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="Syncfusion.Grid.Windows" AssemblyName="Syncfusion.Grid.Windows" HintPath="Syncfusion.Grid.Windows.dll" />
+        <Reference Name="DevExpress.Utils.v8.3" AssemblyName="DevExpress.Utils.v8.3" HintPath="DevExpress.Utils.v8.3.dll" />
+        <Reference Name="mscorlib" AssemblyName="mscorlib" HintPath="mscorlib.dll" />
+        <Reference Name="DevExpress.XtraEditors.v8.3" AssemblyName="DevExpress.XtraEditors.v8.3" HintPath="DevExpress.XtraEditors.v8.3.dll" />
+        <Reference Name="Syncfusion.GridConverter.Windows" AssemblyName="Syncfusion.GridConverter.Windows" HintPath="Syncfusion.GridConverter.Windows.dll" />
+        <Reference Name="DevExpress.XtraGrid.v8.3" AssemblyName="DevExpress.XtraGrid.v8.3" HintPath="DevExpress.XtraGrid.v8.3.dll" />
+        <Reference Name="System.Drawing" AssemblyName="System.Drawing" HintPath="System.Drawing.dll" />
+        <Reference Name="Ядро" AssemblyName="Ядро" HintPath="Ядро.dll" />
+        <Reference Name="System" AssemblyName="System" HintPath="System.dll" />
+        <Reference Name="DevExpress.XtraLayout.v8.3" AssemblyName="DevExpress.XtraLayout.v8.3" HintPath="DevExpress.XtraLayout.v8.3.dll" />
+        <Reference Name="Приложение" AssemblyName="Приложение" HintPath="Приложение.dll" />
+        <Reference Name="System.Windows.Forms" AssemblyName="System.Windows.Forms" HintPath="System.Windows.Forms.dll" />
+        <Reference Name="System.Xml" AssemblyName="System.Xml" HintPath="System.XML.dll" />
+        <Reference Name="DevExpress.XtraBars.v8.3" AssemblyName="DevExpress.XtraBars.v8.3" HintPath="DevExpress.XtraBars.v8.3.dll" />
+        <Reference Name="Syncfusion.XlsIO.Base" AssemblyName="Syncfusion.XlsIO.Base" HintPath="Syncfusion.XlsIO.Base.dll" />
+        <Reference Name="DevExpress.Data.v8.3" AssemblyName="DevExpress.Data.v8.3" HintPath="DevExpress.Data.v8.3.dll" />
+        <Reference Name="Syncfusion.Shared.Base" AssemblyName="Syncfusion.Shared.Base" HintPath="Syncfusion.Shared.Base.dll" />
+        <Reference Name="БарсПриложение" AssemblyName="БарсПриложение" HintPath="БарсПриложение.dll" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_ВыборДаты.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_ВыборДаты_Renderer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ФормаПроверкиТестов.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\РедакторФормул.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ТаблицаExcel.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ИнтерфейсОтображаемойТаблицыЭкраннойФормы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ТаблицаОтчетнойФормы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ШапкаЭкраннойФормы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ФормаИсторииСборки.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\СобытиеОписанияУровняИстории.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ТипПостроенияИсторииСборки.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ФункцииАвтоблоков.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ЭкраннаяФорма.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\РедакторЧислаДинамическойТаблицы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ФормаВыбораТеста.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ИмпортЭкранныхФорм.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\СтолбецОбъединенияДинамическойТаблицы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ФормаПоказаАвтосохраненныхФайлов.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.БраузерОтчетныхФорм.Properties\Resources.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ФормаДинамическойТаблицы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\РедакторМаски.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_РедакторВремени.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_РедакторВремени_Renderer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ДинамическаяТаблица.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_МногострочныйРедактор.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_МногострочныйРедактор_Renderer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ПараметрыКнопкиТаблицы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_РедакторИзображения.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_РедакторИзображения_Renderer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\НастройкиГруппыВкладок.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\НастройкиВкладки.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\РедакторФлажокДинамическойТаблицы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ЭлементПросмотраЗаписиИсторииСборки.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ВариантОткрытияФормы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ФункцииПоиска.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\СписокРедактируемыхФорм.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\РедактируемаяФорма.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_ТекстСМаской.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_ТекстСМаской_Renderer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\ПараметрыСозданияРедактора_ВыборИзСправочника.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_ВыборИзСправочника.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторыЯчеек\РедакторЯчеек_ВыборИзСправочника_Renderer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\РедакторДатыДинамическойТаблицы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ОбъединениеДинамическойТаблицы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\ОписаниеУровняПросмотраИсторииСборки.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\СобытиеИзмененияТаблицыДанных.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\СобытиеПослеУстановкиЗначенияЯчейки.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм\РежимРаботыЭкраннойФормы.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="_PrivateImplementationDetails_{8C98A8F3-6FD6-456D-A0E5-6803642D785E}.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.ЭкраннаяФорма.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="БраузерОтчетныхФорм.dll.licenses" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.ФормаВыбораТеста.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.ФормаПоказаАвтосохраненныхФайлов.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторМаски.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.ФормаИсторииСборки.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.БраузерОтчетныхФорм.Properties.Resources.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.РедакторФормул.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.ФормаДинамическойТаблицы.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.ДинамическаяТаблица.resx" BuildAction="EmbeddedResource" />
+        <File RelPath="Барс.Своды.БраузерОтчетныхФорм.ФормаПроверкиТестов.resx" BuildAction="EmbeddedResource" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>
