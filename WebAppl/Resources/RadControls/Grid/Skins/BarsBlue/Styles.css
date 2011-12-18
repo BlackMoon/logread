@@ -1,0 +1,173 @@
+﻿/* Telerik RadGrid WebBlue skin */
+
+.RadGrid_BarsBlue
+{
+	background: #779bdd;
+	border: solid 1px #1b4694;
+	border-top: 0px;
+	font: normal 12px Tahoma, Verdana, Sans-serif;
+	scrollbar-face-color: #bbc1c9; 
+	scrollbar-highlight-color: #bbc1c9; 
+	scrollbar-shadow-color: #bbc1c9; 
+	scrollbar-3dlight-color: #bbc1c9; 
+	scrollbar-arrow-color: #333; 
+	scrollbar-track-color: #bbc1c9;
+	scrollbar-darkshadow-color: #bbc1c9; 
+	text-align: left;
+}
+
+.MasterTable_BarsBlue
+{
+	border: 0px;
+	border-collapse: separate !important;
+	color: black;
+	/*-moz-user-select: none;*/ /*disables text selecting in Firefox to combat unpleasant visual appearance*/
+}
+
+.GridRow_BarsBlue td,
+.GridAltRow_BarsBlue td,
+.GridEditRow_BarsBlue td
+{
+	border-top: solid 1px #d2d8db;
+	border-bottom: solid 1px white;
+	padding: 0px 4px;
+}
+
+.GridRow_BarsBlue,
+.GridAltRow_BarsBlue,
+.GridEditRow_BarsBlue,
+.ActiveRow_BarsBlue
+{
+	height: 20px;
+}
+
+.GridRow_BarsBlue
+{
+	background: #f0f2f4;
+}
+.GridAltRow_BarsBlue
+{
+	background: white;
+}
+
+.SelectedRow_BarsBlue
+{
+	background: #f9f6dd;
+}
+.SelectedRow_BarsBlue td
+{
+	border-top: solid 1px #d2d8db;
+	border-bottom: solid 1px white;
+}
+
+.GridEditRow_BarsBlue
+{
+	background-color: #ffffe1;
+}
+.GridEditRow_BarsBlue input
+{
+	font-size: 12px;
+}
+
+.ActiveRow_BarsBlue
+{
+	background: #d2d8db;
+}
+.ActiveRow_BarsBlue td
+{
+	border-top: solid 1px #abb4b9;
+	border-bottom: solid 1px white;
+}
+
+.GridHeader_BarsBlue,
+.ResizeHeader_BarsBlue
+{
+	background: url('Img/headerBg.gif') repeat-x;
+	border-top: solid 1px #1b4694;
+	border-bottom: solid 1px #1b4694;
+	padding: 0px 4px;
+	height: 26px !important;
+	color: black;
+	font-size: 11px;
+}
+
+.GridHeader_BarsBlue a
+{
+	text-decoration: none;
+	color: black !important;
+}
+
+/* ascending / descending sorting arrow */
+.GridHeader_BarsBlue img,
+.GroupPanelItems_BarsBlue input
+{
+	vertical-align: middle;
+}
+
+td.GridHeader_BarsBlue input
+{
+	width: auto;
+	float: left;
+	border: solid 1px #474b38;
+	background-color: #fafafa;
+	font: bold 10px Verdana, Arial, Sans-serif;
+	color: #989cb0;
+	margin-right: 2px;
+}
+
+.GroupPanel_BarsBlue
+{
+	background: #779bdd url('Img/GroupPanelBg.gif') repeat-x;
+	width: 100%;
+	height: 25px;
+	border-top: solid 1px #898d8f;
+}
+
+/* grouping button */
+
+.GroupPanelItems_BarsBlue
+{
+	background: #f0f2f4;
+	color: #999;
+	border-top: solid 1px white;
+	border-right: solid 1px #8d9092;
+	border-bottom: solid 1px #8d9092;
+	border-left: solid 1px white;
+	padding-left: 4px;
+	white-space:  nowrap;
+	font-size: 11px;
+}
+
+tr.GroupHeader_BarsBlue
+{
+	background: #c7d0d9;
+	color: black;
+}
+
+tr.GridPager_BarsBlue
+{
+	background: #d2d6db;
+	color: #6e7376;
+	cursor: default;
+	height: 21px;
+}
+
+tr.GridCommandRow_BarsBlue
+{
+	font-weight:bold;
+}
+
+.GridPager_BarsBlue a
+{
+	color: #6e7376;
+}
+
+.GridPager_BarsBlue a:hover
+{
+	color: #333;
+}
+
+.GridFooter_BarsBlue
+{
+	padding: 0px 4px;
+}

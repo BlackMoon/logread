@@ -1,0 +1,15 @@
+<%@ Register TagPrefix="dxwgv" Namespace="DevExpress.Web.ASPxGridView" Assembly="DevExpress.Web.ASPxGridView.v8.2" %>
+<dxwgv:ASPxGridView runat="server"
+	CssFilePath="~/App_Themes/Office2003 Blue/{0}/styles.css" CssPostfix="Office2003_Blue">
+	<Images ImageFolder="~/App_Themes/Office2003 Blue/{0}/">
+		<ExpandedButton Url="~/App_Themes/Office2003 Blue/GridView/gvExpandedButton.png" Width="11px" Height="12px" />
+		<CollapsedButton Url="~/App_Themes/Office2003 Blue/GridView/gvCollapsedButton.png" Width="11px" Height="12px" />	
+		<DetailExpandedButton Url="~/App_Themes/Office2003 Blue/GridView/gvExpandedButton.png" Width="11px" Height="12px" />
+		<DetailCollapsedButton Url="~/App_Themes/Office2003 Blue/GridView/gvCollapsedButton.png" Width="11px" Height="12px" />			
+		<FilterRowButton Width="13px" Height="13px" />
+	</Images>	
+    <Styles>
+        <Header SortingImageSpacing="5"></Header>
+	<LoadingPanel ImageSpacing="10px" />
+    </Styles>	
+</dxwgv:ASPxGridView>

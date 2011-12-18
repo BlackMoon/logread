@@ -1,0 +1,37 @@
+﻿/* Main elements */
+
+html, body{
+	height:100%;
+	width: 100%;
+}
+
+.DefaultPageBody
+{
+	/*background : url('./Images/Background.jpg');*/
+	font-size:small;
+}
+
+.mainDiv 
+{
+	min-height: 100%;
+	min-width: 1000px;
+	text-align: center;
+	margin:0 auto;
+	background: url('./Images/shadow.png');
+	background-repeat: repeat-x;
+}
+
+.CaptionText
+{
+	color:#4e4b49;
+}
+
+#BarsLogo
+{
+	display:none;
+}
+
+#PlatformLogo
+{
+	display:none;
+}

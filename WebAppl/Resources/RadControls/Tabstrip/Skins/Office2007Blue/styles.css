@@ -1,0 +1,88 @@
+.RadTabStrip_Office2007Blue
+{
+	text-align: center;
+	background: #bfdbff url('Img/TabstripBackground.gif') bottom left repeat-x;
+}
+
+.RadTabStrip_Office2007Blue ul
+{
+	padding-top:3px;
+}
+
+.RadTabStrip_Office2007Blue li a
+{
+	padding-left: 6px;
+	background: transparent url('img/tabMiddleOff.gif') 0px 0px no-repeat;
+	color: #203b78;
+	text-decoration: none;
+	line-height: 23px;	
+}
+
+.RadTabStrip_Office2007Blue li a:hover
+{
+	color: black;
+}
+
+.RadTabStrip_Office2007Blue li a .wrap
+{
+
+	padding-right: 6px;
+	background: transparent url('img/tabMiddleOff.gif') right 0px no-repeat;
+}
+
+.RadTabStrip_Office2007Blue li a .innerWrap
+{
+
+	padding: 0 5px;
+	background:transparent url('img/tabMiddleOff.gif') 0px 0px repeat-x;
+}
+
+.RadTabStrip_Office2007Blue li a.selected
+{
+	line-height: 23px;
+	background: transparent url('img/tabLeftOn.gif') 0px 0px no-repeat;
+}
+
+.RadTabStrip_Office2007Blue li a.selected .wrap
+{
+	background-image:url('img/tabRightOn.gif');
+}
+
+
+.RadTabStrip_Office2007Blue li a.selected .innerWrap
+{
+	background: url('img/tabMiddleOn.gif') right top no-repeat;
+}
+
+/* arrows */
+.RadTabStrip_Office2007Blue .rightArrow, 
+.RadTabStrip_Office2007Blue .leftArrow,
+.RadTabStrip_Office2007Blue .rightArrowDisabled, 
+.RadTabStrip_Office2007Blue .leftArrowDisabled
+{
+	width:17px;
+	height:22px;
+}
+
+
+
+
+.RadTabStrip_Office2007Blue .leftArrow
+{
+	background-image:url(img/ScrollLeft.png);
+}
+
+.RadTabStrip_Office2007Blue .rightArrow
+{
+	background-image:url(img/ScrollRight.png);
+}
+
+.RadTabStrip_Office2007Blue .leftArrowDisabled
+{
+	background-image:url(img/ScrollLeftDisabled.png);
+}
+
+.RadTabStrip_Office2007Blue .rightArrowDisabled
+{
+	background-image:url(img/ScrollRightDisabled.png);
+}

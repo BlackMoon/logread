@@ -1,0 +1,1615 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47E9F075-EFBB-4E4E-92B6-BABAF79940F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAppl</RootNamespace>
+    <AssemblyName>WebAppl</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="ActiproSoftware.Shared.Net20, Version=1.0.95.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\ActiproSoftware.Shared.Net20.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Addons.DotNet.Net20, Version=4.0.276.0, Culture=neutral, PublicKeyToken=21a821480e210563, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\ActiproSoftware.SyntaxEditor.Addons.DotNet.Net20.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Net20, Version=4.0.276.0, Culture=neutral, PublicKeyToken=21a821480e210563, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\ActiproSoftware.SyntaxEditor.Net20.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.WinUICore.Net20, Version=1.0.95.0, Culture=neutral, PublicKeyToken=1eba893a2bc55de5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\ActiproSoftware.WinUICore.Net20.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ajax, Version=5.7.25.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v8.2.Export, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v8.2.UI, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=3.0.2017.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\FarPoint.CalcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=3.0.2017.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Web.Spread, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\FarPoint.Web.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Web.Spread.Extender, Version=4.0.2003.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\FarPoint.Web.Spread.Extender.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\Oracle.DataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RadAjax.Net2, Version=1.8.5.0, Culture=neutral, PublicKeyToken=3f7b438d1c762d0b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadAjax.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadCalendar.Net2, Version=2.2.1.0, Culture=neutral, PublicKeyToken=a1432cd341173140, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadCalendar.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadComboBox.Net2, Version=2.8.1.0, Culture=neutral, PublicKeyToken=175e9829b585f1f6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadComboBox.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadEditor.Net2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=852c9eb6525c1b53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadEditor.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadGrid.Net2, Version=5.0.1.0, Culture=neutral, PublicKeyToken=ec87bc2939ec45df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadGrid.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadInput.Net2, Version=2.1.1.0, Culture=neutral, PublicKeyToken=a1432cd341173140, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadInput.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadMenu.Net2, Version=4.4.1.0, Culture=neutral, PublicKeyToken=bbe59a8ad3533e68, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadMenu.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadPanelbar.Net2, Version=4.3.1.0, Culture=neutral, PublicKeyToken=e0d16f6f4c7e05de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadPanelbar.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadSplitter.Net2, Version=1.3.1.0, Culture=neutral, PublicKeyToken=b4e93c26a31a21f0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadSplitter.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadTabStrip.Net2, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a87324b017ca21ce, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadTabStrip.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadToolbar.Net2, Version=1.6.1.0, Culture=neutral, PublicKeyToken=58e92726eb339b98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadToolbar.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadTreeView.Net2, Version=6.3.1.0, Culture=neutral, PublicKeyToken=dbd98e0feff9f06b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadTreeView.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadUpload.Net2, Version=2.4.5.0, Culture=neutral, PublicKeyToken=b4e93c26a31a21f0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadUpload.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadWindow.Net2, Version=1.9.1.0, Culture=neutral, PublicKeyToken=a3055f084732468e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\RadWindow.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Calculate.Base, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.Calculate.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.Compression.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Core, Version=6.302.0.6, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="syncfusion.docio.base, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\syncfusion.docio.base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.Grid.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.Grid.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.GridConverter.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.Shared.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Windows, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Syncfusion.Shared.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=6.302.0.6, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\Syncfusion.XlsIO.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\System.Web.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="БарсАрхиватор, Version=1.0.0.3260, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\БарсАрхиватор.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсКлиент, Version=2.2.0.5180, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\БарсКлиент.exe</HintPath>
+    </Reference>
+    <Reference Include="БарсЛокализация, Version=2.2.0.3900, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\БарсЛокализация.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсМенеджерКонфигурации, Version=2.2.0.5000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\БарсМенеджерКонфигурации.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсПриложение, Version=2.1.0.5001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\БарсПриложение.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсРесурсы, Version=1.0.0.1866, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\БарсРесурсы.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсСмартКлиент, Version=2.2.0.3900, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\БарсСмартКлиент.exe</HintPath>
+    </Reference>
+    <Reference Include="БраузерМакросов, Version=2.1.0.6146, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\БраузерМакросов.dll</HintPath>
+    </Reference>
+    <Reference Include="БраузерОтчетныхФорм, Version=2.1.0.4978, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\БраузерОтчетныхФорм.dll</HintPath>
+    </Reference>
+    <Reference Include="ВебЯдро, Version=1.0.0.3038, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.WebКлиент\РабочаяВерсия\ВебЯдро.dll</HintPath>
+    </Reference>
+    <Reference Include="ИнтерфейсСервераАутентификации, Version=1.0.0.4054, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\core\ПлатформаБАРС\БАРС.Клиент\РабочаяВерсия\ИнтерфейсСервераАутентификации.dll</HintPath>
+    </Reference>
+    <Reference Include="Платформа, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Платформа.dll</HintPath>
+    </Reference>
+    <Reference Include="Приложение, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ЯдроСводов\Приложение.dll</HintPath>
+    </Reference>
+    <Reference Include="Ядро, Version=1.0.0.2121, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\Ядро.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtButtonBackHover.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtButtonBackPressed.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarFNNextYear.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarFNPrevYear.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarHeadBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarNextMonth.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarNextMonthDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarNextYear.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarNextYearDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarPrevMonth.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarPrevMonthDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarPrevYear.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtCalendarPrevYearDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtDropDown.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtDropDownDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtEllipsis.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtEllipsisDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtError.png" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditDecrementImage.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditDecrementImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditIncrementImage.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditIncrementImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditLargeDecImage.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditLargeDecImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditLargeIncImage.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinEditLargeIncImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\Loading.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Editors\styles.css" />
+    <Content Include="App_Themes\Office2003 Blue\Web\hlTail.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\Loading.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mItemSeparatorBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mItemVerticalSeparatorBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mPopupBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mPopupHBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mPopupSeparatorBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\nbBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\nbCollapse.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\nbExpand.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\nbGroupBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\nbGroupHeaderBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\nbHBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\nbSBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pAll.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pcSizeGrip.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pFirst.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pLast.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pNext.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pPrev.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpHeader.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpTopEdge.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Office2003 Blue\Web\smBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\smFirstLevelBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\smSecondLevelBullet.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\styles.css" />
+    <Content Include="App_Themes\Office2003 Blue\Web\tcBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\tcTabABack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\tcTabAHBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\tcTabHBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\Web\tiBackToTop.gif" />
+    <Content Include="bin\ace32.dll" />
+    <Content Include="bin\adsloc32.dll" />
+    <Content Include="bin\axcws32.dll" />
+    <Content Include="bin\Сервер\ИсходныеТексты\Приложение\ГлавноеМеню.xml" />
+    <Content Include="bin\Сервер\ИсходныеТексты\Приложение\Ядро\ПротоколВыполненияОперации\%28Отчет%29.ПечатнаяФормаПротоколаВыполненияОперации.xsl" />
+    <Content Include="BrowserUpdates.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorHandler.aspx" />
+    <Content Include="Forms\Analytics\AnalyticExtracts_List.ascx" />
+    <Content Include="Forms\Analytics\AnalyticExtracts_Setup.ascx" />
+    <Content Include="Forms\Analytics\AnalyticExtracts_View.ascx" />
+    <Content Include="Forms\Analytics\ReportPeriods_List.ascx" />
+    <Content Include="Forms\Dictionary\Dictionary.ascx" />
+    <Content Include="Forms\Dictionary\Dictionary.aspx" />
+    <Content Include="Forms\FileImport\FileImport.ascx" />
+    <Content Include="Forms\LoggedUsers\LoggedUsers_List.ascx" />
+    <Content Include="Forms\MacroProcessing\CompareResult.ascx" />
+    <Content Include="Forms\MacroProcessing\MacroParams.ascx" />
+    <Content Include="Forms\Profile\Profile.ascx" />
+    <Content Include="Forms\Racheti\Racheti_Edit.ascx" />
+    <Content Include="Forms\Racheti\Racheti_List.ascx" />
+    <Content Include="Forms\ReportForms\PrintForms\PrintForms.ascx" />
+    <Content Include="Forms\ReportForms\Uviazki\UviazkiReport.ascx" />
+    <Content Include="Forms\SdachaOtchetnosti\ConsolidateForm\ConsolidateForm.ascx" />
+    <Content Include="Forms\SdachaOtchetnosti\Recovery\Recovery.ascx" />
+    <Content Include="Forms\SdachaOtchetnosti\TekuschieOtchetnieFormi\TekuschieOtchetnieFormi_List.ascx" />
+    <Content Include="Forms\SdachaOtchetnosti\TekuschieOtchetnieFormi\TekuschieOtchetnieFormi_View.ascx" />
+    <Content Include="Forms\SubTable\SubTable.ascx" />
+    <Content Include="Forms\Uchrejdenie\Uchrejdenie.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="MainForm.aspx" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\button.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\checkboxeditor.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\checkboxrender.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\cmdbar.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\fpspread.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\fpspread.js" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\listboxeditor.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\listboxrender.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\percenteditor.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\percentrender.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\htc\radiobtnlisteditor.htc" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Add-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Add.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Cancel-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Cancel.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\checked.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Clear-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Clear.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Copy-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Copy.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Delete-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Delete.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\down.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\downarrow.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Edit-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Edit.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\First-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\First.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\gline.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Insert-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Insert.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Last-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Last.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\minus.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Next-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Next.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Paste-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Paste.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\plus.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Prev-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Prev.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Print-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Print.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\sbar.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\spinner.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\unchecked.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\up.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\uparrow.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Update-d.gif" />
+    <Content Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Update.gif" />
+    <Content Include="Resources\Images\BrowserMenu\Attachment.png" />
+    <Content Include="Resources\Images\BrowserMenu\FormulaEvaluator.png" />
+    <Content Include="Resources\Images\BrowserMenu\Print.png" />
+    <Content Include="Resources\Images\ButtonEdit\ChooseImage.png" />
+    <Content Include="Resources\Images\ButtonEdit\ChooseImageHotTrack.PNG" />
+    <Content Include="Resources\Images\ButtonEdit\ClearImage.PNG" />
+    <Content Include="Resources\Images\ButtonEdit\ClearImageHotTrack.PNG" />
+    <Content Include="Resources\Images\Common\access_denied.png" />
+    <Content Include="Resources\Images\Common\blank.gif" />
+    <Content Include="Resources\Images\Common\Delete.gif" />
+    <Content Include="Resources\Images\Common\DocumentLarge.gif" />
+    <Content Include="Resources\Images\Common\DocumentSmall.gif" />
+    <Content Include="Resources\Images\Common\Edit.gif" />
+    <Content Include="Resources\Images\Common\email_small.gif" />
+    <Content Include="Resources\Images\Common\error_handler.png" />
+    <Content Include="Resources\Images\Common\Find.gif" />
+    <Content Include="Resources\Images\Common\help.gif" />
+    <Content Include="Resources\Images\Common\SessionClose.gif" />
+    <Content Include="Resources\Images\Common\Splash.gif" />
+    <Content Include="Resources\Images\Common\wait.gif" />
+    <Content Include="Resources\Images\MainMenu\029ef1338def437eb696fd84ed8aa207.png" />
+    <Content Include="Resources\Images\MainMenu\15be535dd1af4ba48bec736c0a390f80.png" />
+    <Content Include="Resources\Images\MainMenu\177620f3db694c7ba35aade6d14cd221.png" />
+    <Content Include="Resources\Images\MainMenu\26d843965bad49ca8bf669903028a404.png" />
+    <Content Include="Resources\Images\MainMenu\29fe824762bb43b4a767ce41f0b6c014.png" />
+    <Content Include="Resources\Images\MainMenu\418ba5d50e2247b584b0affd27f66743.png" />
+    <Content Include="Resources\Images\MainMenu\4d978c14adb94ae8932577a72351a95a.png" />
+    <Content Include="Resources\Images\MainMenu\5583a89cbb50421faec79b59da4306dc.png" />
+    <Content Include="Resources\Images\MainMenu\5cd8292a74f44ce3be149c53f59dafd0.png" />
+    <Content Include="Resources\Images\MainMenu\6352179757134957954dc65b872e1ea6.png" />
+    <Content Include="Resources\Images\MainMenu\66aaeca90afa484993dfa9c8e32de6c9.png" />
+    <Content Include="Resources\Images\MainMenu\68cc19693d9b40d089c9af74800e5539.png" />
+    <Content Include="Resources\Images\MainMenu\6c915ef889fa42feb2df0fc31cc594d3.png" />
+    <Content Include="Resources\Images\MainMenu\761a5f2d7d404ebc88b1c9a6f07aa759.png" />
+    <Content Include="Resources\Images\MainMenu\788f04742f59481dbce4bd14987e0313.png" />
+    <Content Include="Resources\Images\MainMenu\7a2020f4414343669d20282da4ae1e9a.png" />
+    <Content Include="Resources\Images\MainMenu\7c3d5c01d202479c85bd0f31b6d4e380.png" />
+    <Content Include="Resources\Images\MainMenu\8481263d27c344d090c088a5d5ebf358.png" />
+    <Content Include="Resources\Images\MainMenu\85d522a6b0634b219a052f7f352d344c.png" />
+    <Content Include="Resources\Images\MainMenu\867d9f72043446fa9ce13c3beaa76fab.png" />
+    <Content Include="Resources\Images\MainMenu\89b6abd3702248a8824f2dfa8005008a.png" />
+    <Content Include="Resources\Images\MainMenu\afa3b790ccad4681ab163e4ab51a0c50.png" />
+    <Content Include="Resources\Images\MainMenu\d8514e429960459f9d4b3384068a556d.png" />
+    <Content Include="Resources\Images\MainMenu\e15cb9f150464001a2772cfcf4338a39.png" />
+    <Content Include="Resources\Images\MainMenu\eab4585060224798927a718201eaafd6.png" />
+    <Content Include="Resources\Images\MainMenu\ecdd5317a7a2440298ab12b52b607afd.png" />
+    <Content Include="Resources\Images\MainMenu\ee7afa36ef814589b687bcc1c75a369f.png" />
+    <Content Include="Resources\Images\MainMenu\f5b3e5befbe04e869e9371f58ded5095.png" />
+    <Content Include="Resources\RadControls\Ajax\Scripts\1_8_5\RadAjax.js" />
+    <Content Include="Resources\RadControls\Ajax\Scripts\1_8_5\RadAjaxNamespace.js" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading1.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading2.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading3.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading4.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading5.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading6.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\loading7.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\LoadingProgressBar.gif" />
+    <Content Include="Resources\RadControls\Ajax\Skins\Default\LoadingVerticalBar.gif" />
+    <Content Include="Resources\RadControls\Calendar\Images\arrow.gif" />
+    <Content Include="Resources\RadControls\Calendar\Scripts\2_2_1\RadCalendar.js" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Calendar.css" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\arrowLeft.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\arrowRight.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\clock.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\clockHover.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\datePickerPopup.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\datePickerPopupHover.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\DaysOfWeekBg.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\fastNavLeft.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\fastNavRight.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\Img\titlebarBg.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsBlue\RadTimePicker.css" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Calendar.css" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\arrowLeft.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\arrowRight.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\clock.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\clockHover.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\datePickerPopup.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\datePickerPopupHover.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\DaysOfWeekBg.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\fastNavLeft.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\fastNavRight.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\Img\titlebarBg.gif" />
+    <Content Include="Resources\RadControls\Calendar\Skins\BarsGreen\RadTimePicker.css" />
+    <Content Include="Resources\RadControls\Combobox\Scripts\2_8_1\RadComboBox.js" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsBlue\DropArrow.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsBlue\HeaderBg.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsBlue\ScrollDown.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsBlue\ScrollDownDisabled.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsBlue\Styles.css" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsGreen\DropArrow.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsGreen\HeaderBg.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsGreen\ScrollDown.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsGreen\ScrollDownDisabled.gif" />
+    <Content Include="Resources\RadControls\Combobox\Skins\BarsGreen\Styles.css" />
+    <Content Include="Resources\RadControls\Grid\Scripts\5_0_1\RadAjaxNamespace.js" />
+    <Content Include="Resources\RadControls\Grid\Scripts\5_0_1\RadGrid.js" />
+    <Content Include="Resources\RadControls\Grid\Skins\AddRecord.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\AddRecord.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Cancel.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Delete.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Edit.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Filter.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\footerBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\GroupHeaderBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\GroupPanelBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\GroupPanelBg2.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\GroupPanelItemsBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\headerBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\PagerBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Img\rowBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Insert.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Loading.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\NotSelectedMenu.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Refresh.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\SelectedMenu.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\SelectedRow.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\SingleMinus.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\SinglePlus.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\SortAsc.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\SortDesc.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Styles.css" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsBlue\Update.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\AddRecord.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Cancel.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Delete.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Edit.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Filter.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\footerBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\GroupHeaderBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\GroupPanelBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\GroupPanelBg2.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\GroupPanelItemsBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\headerBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\PagerBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Img\rowBg.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Insert.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Loading.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\NotSelectedMenu.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Refresh.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\SelectedMenu.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\SelectedRow.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\SingleMinus.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\SinglePlus.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\SortAsc.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\SortDesc.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Styles.css" />
+    <Content Include="Resources\RadControls\Grid\Skins\BarsGreen\Update.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Cancel.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\Img\button.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\Img\buttondown.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\Img\buttonup.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\Img\default.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\Img\error.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\Img\focus.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\Img\over.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Default\styles.css" />
+    <Content Include="Resources\RadControls\Grid\Skins\Delete.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Edit.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Filter.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Insert.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\loading.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\NotSelectedMenu.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Refresh.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\SelectedMenu.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\SelectedRow.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\SingleMinus.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\SinglePlus.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\SortAsc.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\SortDesc.gif" />
+    <Content Include="Resources\RadControls\Grid\Skins\Update.gif" />
+    <Content Include="Resources\RadControls\Input\Scripts\2_1_1\RadDateInput.js" />
+    <Content Include="Resources\RadControls\Input\Scripts\2_1_1\RadInput.js" />
+    <Content Include="Resources\RadControls\Input\Scripts\2_1_1\RadMaskedInput.js" />
+    <Content Include="Resources\RadControls\Input\Scripts\2_1_1\RadNumericInput.js" />
+    <Content Include="Resources\RadControls\Input\Skins\Office2007\Img\default.gif" />
+    <Content Include="Resources\RadControls\Input\Skins\Office2007\Img\error.gif" />
+    <Content Include="Resources\RadControls\Input\Skins\Office2007\Img\focus.gif" />
+    <Content Include="Resources\RadControls\Input\Skins\Office2007\Img\over.gif" />
+    <Content Include="Resources\RadControls\Input\Skins\Office2007\styles.css" />
+    <Content Include="Resources\RadControls\Menu\Scripts\4_4_1\menu.css" />
+    <Content Include="Resources\RadControls\Menu\Scripts\4_4_1\RadMenu.js" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\bottom.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\groupImage.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\groupImageRTL.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\invertedGroupImage.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\left.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\MainItemBackground.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\menuItemArrow.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\MenuItemBackground.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\menuItemHover.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\right.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\Separator.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\img\top.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Default2006\styles.css" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\bottom.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\groupImage.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\invertedGroupImage.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\invertedGroupImageRTL.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\left.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\Leve2ItemBg.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\Level2First.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\Level2Hover.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\Level2Last.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MainItemBackground.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MainItemBackgroundHover.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MenuBarBackground.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MenuItemBackground.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MenuItemBackgroundHover.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MenuItemBgFirst.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MenuItemBgHoverFirst.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MenuItemBgLast.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\MenuItemBgLastHover.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\menuItemHover.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\right.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\Separator.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\img\top.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Office2007\styles.css" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\bottom.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\GroupBkg.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\groupImage.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\groupImageRTL.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\left.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\right.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\RootItemBkg.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\RootItemFocusedBkg.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\Img\top.gif" />
+    <Content Include="Resources\RadControls\Menu\Skins\Outlook\styles.css" />
+    <Content Include="Resources\RadControls\Panelbar\Scripts\4_3_1\panelbar.css" />
+    <Content Include="Resources\RadControls\Panelbar\Scripts\4_3_1\RadPanelbar.js" />
+    <Content Include="Resources\RadControls\Panelbar\Skins\WindowsXP\Img\Left_Item.gif" />
+    <Content Include="Resources\RadControls\Panelbar\Skins\WindowsXP\Img\Left_Item_Selected.gif" />
+    <Content Include="Resources\RadControls\Panelbar\Skins\WindowsXP\Img\MainItemNormal.gif" />
+    <Content Include="Resources\RadControls\Panelbar\Skins\WindowsXP\Img\MainItemSelected.gif" />
+    <Content Include="Resources\RadControls\Panelbar\Skins\WindowsXP\Img\Right_Item.gif" />
+    <Content Include="Resources\RadControls\Panelbar\Skins\WindowsXP\Img\Root_Item_Right_Selected.gif" />
+    <Content Include="Resources\RadControls\Panelbar\Skins\WindowsXP\styles.css" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationBar.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationMenu.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationMenu.png" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationMenuActive.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationMenuActive.png" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationMenuHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationMenuHover.png" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\ApplicationName.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\DropDownMenuArrow.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\DropDownMenuArrowDisabled.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\Empty.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\LargeRibbonButtonEndChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\LargeRibbonButtonEndHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\LargeRibbonButtonItemChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\LargeRibbonButtonItemHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\LargeRibbonButtonStartChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\LargeRibbonButtonStartHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\OutlookMenuGroupBackground.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\OutlookMenuGroupBackgroundFocused.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\QuickAccessButtonChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\QuickAccessButtonHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\QuickAccessCustomizeButton.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\QuickAccessCustomizeButtonHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\QuickAccessEnd.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\QuickAccessItem.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\QuickAccessStart.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonBar.css" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonBarEnd.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonBarItem.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonBarStart.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonGroupEnd.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonGroupItem.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonGroupStart.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\RibbonSeparator.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\SmallRibbonButtonEndChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\SmallRibbonButtonEndHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\SmallRibbonButtonItemChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\SmallRibbonButtonItemHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\SmallRibbonButtonStartChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsBlue\SmallRibbonButtonStartHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationBar.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationMenu.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationMenu.png" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationMenuActive.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationMenuActive.png" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationMenuHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationMenuHover.png" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\ApplicationName.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\DropDownMenuArrow.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\DropDownMenuArrowDisabled.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\Empty.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\LargeRibbonButtonEndChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\LargeRibbonButtonEndHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\LargeRibbonButtonItemChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\LargeRibbonButtonItemHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\LargeRibbonButtonStartChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\LargeRibbonButtonStartHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\OutlookMenuGroupBackground.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\OutlookMenuGroupBackgroundFocused.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\QuickAccessButtonChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\QuickAccessButtonHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\QuickAccessCustomizeButton.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\QuickAccessCustomizeButtonHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\QuickAccessEnd.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\QuickAccessItem.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\QuickAccessStart.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonBar.css" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonBarEnd.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonBarItem.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonBarStart.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonGroupEnd.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonGroupItem.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonGroupStart.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\RibbonSeparator.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\SmallRibbonButtonEndChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\SmallRibbonButtonEndHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\SmallRibbonButtonItemChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\SmallRibbonButtonItemHover.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\SmallRibbonButtonStartChecked.gif" />
+    <Content Include="Resources\RadControls\RibbonBar\Skins\BarsGreen\SmallRibbonButtonStartHover.gif" />
+    <Content Include="Resources\RadControls\Splitter\Scripts\1_3_1\RadSlidingZone.js" />
+    <Content Include="Resources\RadControls\Splitter\Scripts\1_3_1\RadSplitter.js" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\close.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\dock.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainer.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerBottom.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerDocked.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerDockedBottom.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerDockedRight.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerDockedTop.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerExpanded.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerExpandedBottom.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerExpandedRight.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerExpandedTop.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerRight.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\paneTabContainerTop.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\slideHeader.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\space.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\splitbar_collapse_h.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\splitbar_collapse_v.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\splitbar_expand_h.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\splitbar_expand_v.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\Img\undock.gif" />
+    <Content Include="Resources\RadControls\Splitter\Skins\WebBlue\styles.css" />
+    <Content Include="Resources\RadControls\Tabstrip\Scripts\3_6_1\RadTabStrip.js" />
+    <Content Include="Resources\RadControls\Tabstrip\Scripts\3_6_1\tabstrip.css" />
+    <Content Include="Resources\RadControls\Tabstrip\Scripts\3_6_1\vtabstrip.css" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\ScrollLeft.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\ScrollLeftDisabled.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\ScrollRight.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\ScrollRightDisabled.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\tabLeftFirstOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\tabLeftFirstOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\tabRightLastOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\tabRightLastOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\tabStripeOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\Img\tabStripeOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsBlue\styles.css" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\ScrollLeft.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\ScrollLeftDisabled.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\ScrollRight.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\ScrollRightDisabled.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\tabLeftFirstOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\tabLeftFirstOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\tabRightLastOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\tabRightLastOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\tabStripeOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\Img\tabStripeOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\BarsGreen\styles.css" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\ScrollLeft.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\ScrollLeftDisabled.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\ScrollRight.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\ScrollRightDisabled.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\tabLeftOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\tabMiddleOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\tabMiddleOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\tabRightOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\img\TabstripBackground.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Blue\styles.css" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\ScrollLeft.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\ScrollLeftDisabled.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\ScrollRight.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\ScrollRightDisabled.png" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\tabLeftOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\tabMiddleOff.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\tabMiddleOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\tabRightOn.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\img\TabstripBackground.gif" />
+    <Content Include="Resources\RadControls\Tabstrip\Skins\Office2007Green\styles.css" />
+    <Content Include="Resources\RadControls\Toolbar\Scripts\1_6_1\RadButton.js" />
+    <Content Include="Resources\RadControls\Toolbar\Scripts\1_6_1\RadToolbar.js" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\addNewItem.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\alignLeft.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\alignRight.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\back.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\backColor.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\backGreen.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\bold.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\btnHoverBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\btnHoverBgV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\bullets.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\ButtonClickedBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\ButtonClickedBgV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\buttonNormalBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\center.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\copy.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\cut.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\decreaseIndent.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\find.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\foreColor.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\forward.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\forwardGreen.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\help.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\increaseIndent.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\italic.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\justify.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\link.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\new.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\newProject.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\numbering.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\open.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\paste.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\print.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\redo.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\save.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\saveAll.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\separator_h.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\separator_v.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\spellCheck.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\table.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\TextButtonBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\TextButtonBgClicked.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarBgH.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarBgV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarLeft.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarLeftV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarLeftV_Bg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarRight.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarRightV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarRightV_Bg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\toolbarRight_Bg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\underline.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\undo.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\VerticalToolbarBtnClick.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\VerticalToolbarBtnHover.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\VerticalToolbarBtnNormal.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\Img\wordWrap.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsBlue\office2007.css" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\addNewItem.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\alignLeft.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\alignRight.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\back.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\backColor.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\backGreen.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\bold.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\btnHoverBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\btnHoverBgV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\bullets.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\ButtonClickedBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\ButtonClickedBgV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\buttonNormalBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\center.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\copy.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\cut.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\decreaseIndent.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\find.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\foreColor.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\forward.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\forwardGreen.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\help.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\increaseIndent.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\italic.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\justify.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\link.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\new.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\newProject.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\numbering.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\open.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\paste.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\print.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\redo.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\save.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\saveAll.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\separator_h.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\separator_v.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\spellCheck.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\table.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\TextButtonBg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\TextButtonBgClicked.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarBgH.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarBgV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarLeft.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarLeftV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarLeftV_Bg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarRight.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarRightV.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarRightV_Bg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\toolbarRight_Bg.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\underline.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\undo.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\VerticalToolbarBtnClick.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\VerticalToolbarBtnHover.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\VerticalToolbarBtnNormal.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\Img\wordWrap.gif" />
+    <Content Include="Resources\RadControls\Toolbar\Skins\BarsGreen\office2007.css" />
+    <Content Include="Resources\RadControls\Treeview\Scripts\6_3_1\RadTreeView.js" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\BottomLine.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\BottomMinus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\BottomPlus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\contextMenu.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\MiddleCrossLine.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\MiddleLine.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\MiddleMinus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\MiddlePlus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\SingleMinus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\SinglePlus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\Style.css" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\TopLine.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\TopMinus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\TopPlus.gif" />
+    <Content Include="Resources\RadControls\Treeview\Skins\WebBlue\WhiteSpace.gif" />
+    <Content Include="Resources\RadControls\Upload\Localization\en-US\RadProgressArea.xml" />
+    <Content Include="Resources\RadControls\Upload\Localization\en-US\RadTemplateUpload.xml" />
+    <Content Include="Resources\RadControls\Upload\Localization\en-US\RadUpload.xml" />
+    <Content Include="Resources\RadControls\Upload\Localization\ru-RU\RadProgressArea.xml" />
+    <Content Include="Resources\RadControls\Upload\Localization\ru-RU\RadTemplateUpload.xml" />
+    <Content Include="Resources\RadControls\Upload\Localization\ru-RU\RadUpload.xml" />
+    <Content Include="Resources\RadControls\Upload\Scripts\2_4_5\RadUpload.js" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\Img\progress.gif" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\Img\radUploadBtnMedium.gif" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\Img\radUploadBtnSmall.gif" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\Img\select.gif" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\Img\waiting.gif" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\RadUpload.css" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\RadUploadProgressArea.css" />
+    <Content Include="Resources\RadControls\Upload\Skins\WebBlue\WebBlue.gif" />
+    <Content Include="Resources\RadControls\Window\Opera.html" />
+    <Content Include="Resources\RadControls\Window\Scripts\1_9_1\RadWindowClient.js" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\BarsImg\Close.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\BarsImg\defaultIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\BarsImg\RadWWrapperHeaderCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\BarsImg\Restore.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CoreTemplates.xml" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\dialogueHeaderCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\dialogueHeaderLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\draggedToolbarTitleBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\footerResize.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\modalBtnBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWStatus.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperBodyLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperBodyRight.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperFooterCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperFooterLeft.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperFooterRight.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperHeaderCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperHeaderLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperHeaderLeft.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperHeaderRight.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\RadWWrapperHeaderRight.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\TabLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\TabLeftSelected.GIF" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\TabMiddle.GIF" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\TabMiddleSelected.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\TabRight.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\CssImg\TabRightSelected.GIF" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\alertIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\Close.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\confirmIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\defaultIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\loading.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\Maximize.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\Minimize.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\modalBtnBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\modalDlgBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\modalDlgTxtBoxBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\ModalImageBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\PinOff.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\PinOn.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\Refresh.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\Reload.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\Restore.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\splash.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\transp.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Img\transpFake.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsBlue\Window.css" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\BarsImg\Close.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\BarsImg\defaultIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\BarsImg\RadWWrapperHeaderCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\BarsImg\Restore.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CoreTemplates.xml" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\dialogueHeaderCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\dialogueHeaderLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\draggedToolbarTitleBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\footerResize.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\modalBtnBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWStatus.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperBodyLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperBodyRight.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperFooterCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperFooterLeft.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperFooterRight.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperHeaderCenter.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperHeaderLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperHeaderLeft.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperHeaderRight.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\RadWWrapperHeaderRight.png" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\TabLeft.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\TabLeftSelected.GIF" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\TabMiddle.GIF" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\TabMiddleSelected.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\TabRight.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\CssImg\TabRightSelected.GIF" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\alertIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\Close.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\confirmIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\defaultIcon.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\loading.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\Maximize.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\Minimize.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\modalBtnBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\modalDlgBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\modalDlgTxtBoxBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\ModalImageBg.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\PinOff.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\PinOn.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\Refresh.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\Reload.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\Restore.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\splash.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\transp.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Img\transpFake.gif" />
+    <Content Include="Resources\RadControls\Window\Skins\BarsGreen\Window.css" />
+    <Content Include="Resources\Scripts\ButtonEdit.js" />
+    <Content Include="Resources\Scripts\ComboBox.js" />
+    <Content Include="Resources\Scripts\Cookie.js" />
+    <Content Include="Resources\Scripts\DatePicker.js" />
+    <Content Include="Resources\Scripts\FixImg.js" />
+    <Content Include="Resources\Scripts\FPSpread.js" />
+    <Content Include="Resources\Scripts\Grid.js" />
+    <Content Include="Resources\Scripts\IEPngFix\iepngfix.htc" />
+    <Content Include="Resources\Scripts\MainMenu.js" />
+    <Content Include="Resources\Scripts\RibbonBar.js" />
+    <Content Include="Resources\Scripts\SignData.js" />
+    <Content Include="Resources\Scripts\TextEdit.js" />
+    <Content Include="Resources\Scripts\Windows.js" />
+    <Content Include="Resources_Design\AVTONOM\Default.css" />
+    <Content Include="Resources_Design\AVTONOM\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\AVTONOM\Images\Button_enter.png" />
+    <Content Include="Resources_Design\AVTONOM\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\AVTONOM\Images\Button_profile.png" />
+    <Content Include="Resources_Design\AVTONOM\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\AVTONOM\Images\Button_users.png" />
+    <Content Include="Resources_Design\AVTONOM\Images\Caption.png" />
+    <Content Include="Resources_Design\AVTONOM\Images\Exit.png" />
+    <Content Include="Resources_Design\AVTONOM\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\AVTONOM\Images\shadow.png" />
+    <Content Include="Resources_Design\AVTONOM\Login.css" />
+    <Content Include="Resources_Design\BO\Default.css" />
+    <Content Include="Resources_Design\BO\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\BO\Images\Button_enter.png" />
+    <Content Include="Resources_Design\BO\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\BO\Images\Button_profile.png" />
+    <Content Include="Resources_Design\BO\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\BO\Images\Button_users.png" />
+    <Content Include="Resources_Design\BO\Images\Caption.png" />
+    <Content Include="Resources_Design\BO\Images\Exit.png" />
+    <Content Include="Resources_Design\BO\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\BO\Images\shadow.png" />
+    <Content Include="Resources_Design\BO\Login.css" />
+    <Content Include="Resources_Design\CESI\Default.css" />
+    <Content Include="Resources_Design\CESI\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\CESI\Images\Button_enter.png" />
+    <Content Include="Resources_Design\CESI\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\CESI\Images\Button_profile.png" />
+    <Content Include="Resources_Design\CESI\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\CESI\Images\Button_users.png" />
+    <Content Include="Resources_Design\CESI\Images\Caption.png" />
+    <Content Include="Resources_Design\CESI\Images\Exit.png" />
+    <Content Include="Resources_Design\CESI\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\CESI\Images\shadow.png" />
+    <Content Include="Resources_Design\CESI\Login.css" />
+    <Content Include="Resources_Design\Common\Common.css" />
+    <Content Include="Resources_Design\Common\Images\BarGroupLogo.jpg" />
+    <Content Include="Resources_Design\Common\Images\button.gif" />
+    <Content Include="Resources_Design\Common\Images\button_wide.gif" />
+    <Content Include="Resources_Design\Common\Images\oracle_logo.gif" />
+    <Content Include="Resources_Design\Common\Images\platforma_logo.png" />
+    <Content Include="Resources_Design\MCHS\Default.css" />
+    <Content Include="Resources_Design\MCHS\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MCHS\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MCHS\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MCHS\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MCHS\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MCHS\Images\Button_users.png" />
+    <Content Include="Resources_Design\MCHS\Images\Caption.png" />
+    <Content Include="Resources_Design\MCHS\Images\Exit.png" />
+    <Content Include="Resources_Design\MCHS\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\MCHS\Images\shadow.jpg" />
+    <Content Include="Resources_Design\MCHS\Login.css" />
+    <Content Include="Resources_Design\MSZO\Default.css" />
+    <Content Include="Resources_Design\MSZO\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MSZO\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MSZO\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MSZO\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MSZO\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MSZO\Images\Button_users.png" />
+    <Content Include="Resources_Design\MSZO\Images\Caption.png" />
+    <Content Include="Resources_Design\MSZO\Images\Exit.png" />
+    <Content Include="Resources_Design\MSZO\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\MSZO\Images\shadow.jpg" />
+    <Content Include="Resources_Design\MSZO\Login.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\AjaxMethods.cs" />
+    <Compile Include="AppCode\PageOptimize\CssCompressor.cs" />
+    <Compile Include="AppCode\PageOptimize\PageCompressor.cs" />
+    <Compile Include="AppCode\PageOptimize\PageOptimizer.cs" />
+    <Compile Include="AppCode\PageOptimize\ScriptCompressor.cs" />
+    <Compile Include="AppCode\PageOptimize\Utils\CssMinifier.cs" />
+    <Compile Include="AppCode\PageOptimize\Utils\JavaScriptMinifier.cs" />
+    <Compile Include="BrowserUpdates.aspx.cs">
+      <DependentUpon>BrowserUpdates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrowserUpdates.aspx.designer.cs">
+      <DependentUpon>BrowserUpdates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorHandler.aspx.cs">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorHandler.aspx.designer.cs">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analytics\AnalyticExtracts_List.ascx.cs">
+      <DependentUpon>AnalyticExtracts_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Analytics\AnalyticExtracts_List.ascx.designer.cs">
+      <DependentUpon>AnalyticExtracts_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analytics\AnalyticExtracts_Setup.ascx.cs">
+      <DependentUpon>AnalyticExtracts_Setup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Analytics\AnalyticExtracts_Setup.ascx.designer.cs">
+      <DependentUpon>AnalyticExtracts_Setup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analytics\AnalyticExtracts_View.ascx.cs">
+      <DependentUpon>AnalyticExtracts_View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Analytics\AnalyticExtracts_View.ascx.designer.cs">
+      <DependentUpon>AnalyticExtracts_View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analytics\ReportPeriods_List.ascx.cs">
+      <DependentUpon>ReportPeriods_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Analytics\ReportPeriods_List.ascx.designer.cs">
+      <DependentUpon>ReportPeriods_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\Dictionary.ascx.cs">
+      <DependentUpon>Dictionary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\Dictionary.ascx.designer.cs">
+      <DependentUpon>Dictionary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dictionary\Dictionary.aspx.cs">
+      <DependentUpon>Dictionary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Dictionary\Dictionary.aspx.designer.cs">
+      <DependentUpon>Dictionary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FileImport\FileImport.ascx.cs">
+      <DependentUpon>FileImport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\FileImport\FileImport.ascx.designer.cs">
+      <DependentUpon>FileImport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoggedUsers\LoggedUsers_List.ascx.cs">
+      <DependentUpon>LoggedUsers_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\LoggedUsers\LoggedUsers_List.ascx.designer.cs">
+      <DependentUpon>LoggedUsers_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MacroProcessing\CompareResult.ascx.cs">
+      <DependentUpon>CompareResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\MacroProcessing\CompareResult.ascx.designer.cs">
+      <DependentUpon>CompareResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MacroProcessing\MacroParams.ascx.cs">
+      <DependentUpon>MacroParams.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\MacroProcessing\MacroParams.ascx.designer.cs">
+      <DependentUpon>MacroParams.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Profile.ascx.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Profile.ascx.designer.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Racheti\Racheti_Edit.ascx.cs">
+      <DependentUpon>Racheti_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Racheti\Racheti_Edit.ascx.designer.cs">
+      <DependentUpon>Racheti_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Racheti\Racheti_List.ascx.cs">
+      <DependentUpon>Racheti_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Racheti\Racheti_List.ascx.designer.cs">
+      <DependentUpon>Racheti_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PrintForms\PrintForms.ascx.cs">
+      <DependentUpon>PrintForms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PrintForms\PrintForms.ascx.designer.cs">
+      <DependentUpon>PrintForms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\Uviazki\UviazkiReport.ascx.cs">
+      <DependentUpon>UviazkiReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\Uviazki\UviazkiReport.ascx.designer.cs">
+      <DependentUpon>UviazkiReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\ConsolidateForm\ConsolidateForm.ascx.cs">
+      <DependentUpon>ConsolidateForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\ConsolidateForm\ConsolidateForm.ascx.designer.cs">
+      <DependentUpon>ConsolidateForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\Recovery\Recovery.ascx.cs">
+      <DependentUpon>Recovery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\Recovery\Recovery.ascx.designer.cs">
+      <DependentUpon>Recovery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\ReportForms\ReportForms_List.ascx.cs">
+      <DependentUpon>ReportForms_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\ReportForms\ReportForms_List.ascx.designer.cs">
+      <DependentUpon>ReportForms_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\TekuschieOtchetnieFormi\TekuschieOtchetnieFormi_List.ascx.cs">
+      <DependentUpon>TekuschieOtchetnieFormi_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\TekuschieOtchetnieFormi\TekuschieOtchetnieFormi_List.ascx.designer.cs">
+      <DependentUpon>TekuschieOtchetnieFormi_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\TekuschieOtchetnieFormi\TekuschieOtchetnieFormi_View.ascx.cs">
+      <DependentUpon>TekuschieOtchetnieFormi_View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SdachaOtchetnosti\TekuschieOtchetnieFormi\TekuschieOtchetnieFormi_View.ascx.designer.cs">
+      <DependentUpon>TekuschieOtchetnieFormi_View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubTable\SubTable.ascx.cs">
+      <DependentUpon>SubTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SubTable\SubTable.ascx.designer.cs">
+      <DependentUpon>SubTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Uchrejdenie\Uchrejdenie.ascx.cs">
+      <DependentUpon>Uchrejdenie.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Uchrejdenie\Uchrejdenie.ascx.designer.cs">
+      <DependentUpon>Uchrejdenie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.aspx.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainForm.aspx.designer.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppCode\ApplicationManager.cs" />
+    <Compile Include="AppCode\ВебФормаОбработкиОтчетнойФормы.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\ОбновлениеWebКлиента.cs" />
+    <Compile Include="AppCode\ПользователиСистемы.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ВебБраузерОтчетныхФорм\ВебБраузерОтчетныхФорм.csproj">
+      <Project>{CE6B4CD1-9A01-448D-94EE-2D2339A6AAD8}</Project>
+      <Name>ВебБраузерОтчетныхФорм</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Office2003 Blue\ASPxButton.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxCalendar.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxComboBox.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxDataView.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxHeadline.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxLabel.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxListBox.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxMemo.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxMenu.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxNavBar.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxPageControl.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxPager.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxTabControl.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxTextBox.skin" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvCollapsedButton.png" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvDragAndDropArrowDown.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvDragAndDropArrowUp.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvDragAndDropHideColumn.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvExpandedButton.png" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvFilterRowButton.png" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvFocusedBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvGradient.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvHeaderFilter.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvHeaderFilterActive.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvHeaderSortDown.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvHeaderSortUp.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvParentGroupRows.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\gvTitleBack.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\Loading.gif" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\styles.css" />
+    <Content Include="App_Themes\Office2003 Blue\GridView\WindowResizer.gif" />
+    <Content Include="App_Themes\Office2003 Blue\ASPxGridView.skin" />
+    <Content Include="Forms\SdachaOtchetnosti\ReportForms\ReportForms_List.ascx" />
+    <Content Include="Resources_Design\Common\Images\Raschety.png" />
+    <Content Include="Resources_Design\MBP\Default.css" />
+    <Content Include="Resources_Design\MBP\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MBP\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MBP\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MBP\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MBP\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MBP\Images\Button_users.png" />
+    <Content Include="Resources_Design\MBP\Images\Caption.png" />
+    <Content Include="Resources_Design\MBP\Images\Exit.png" />
+    <Content Include="Resources_Design\MBP\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\MBP\Images\shadow.png" />
+    <Content Include="Resources_Design\MBP\Login.css" />
+    <Content Include="Resources_Design\MK\Default.css" />
+    <Content Include="Resources_Design\MK\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MK\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MK\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MK\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MK\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MK\Images\Button_users.png" />
+    <Content Include="Resources_Design\MK\Images\Caption.png" />
+    <Content Include="Resources_Design\MK\Images\Exit.png" />
+    <Content Include="Resources_Design\MK\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\MK\Images\shadow.png" />
+    <Content Include="Resources_Design\MK\Login.css" />
+    <Content Include="Resources_Design\MMS\Default.css" />
+    <Content Include="Resources_Design\MMS\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MMS\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MMS\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MMS\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MMS\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MMS\Images\Button_users.png" />
+    <Content Include="Resources_Design\MMS\Images\Caption.png" />
+    <Content Include="Resources_Design\MMS\Login.css" />
+    <Content Include="Resources_Design\MO\Default.css" />
+    <Content Include="Resources_Design\MO\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MO\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MO\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MO\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MO\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MO\Images\Button_users.png" />
+    <Content Include="Resources_Design\MO\Images\Caption.png" />
+    <Content Include="Resources_Design\MO\Images\Exit.png" />
+    <Content Include="Resources_Design\MO\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\MO\Images\shadow.png" />
+    <Content Include="Resources_Design\MO\Login.css" />
+    <Content Include="Resources_Design\MSZ\Default.css" />
+    <Content Include="Resources_Design\MSZ\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MSZ\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MSZ\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MSZ\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MSZ\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MSZ\Images\Button_users.png" />
+    <Content Include="Resources_Design\MSZ\Images\Caption.png" />
+    <Content Include="Resources_Design\MSZ\Images\Exit.png" />
+    <Content Include="Resources_Design\MSZ\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\MSZ\Images\shadow.png" />
+    <Content Include="Resources_Design\MSZ\Login.css" />
+    <Content Include="Resources_Design\MZ\Default.css" />
+    <Content Include="Resources_Design\MZ\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\MZ\Images\Button_enter.png" />
+    <Content Include="Resources_Design\MZ\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\MZ\Images\Button_profile.png" />
+    <Content Include="Resources_Design\MZ\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\MZ\Images\Button_users.png" />
+    <Content Include="Resources_Design\MZ\Images\Caption.png" />
+    <Content Include="Resources_Design\MZ\Images\Exit.png" />
+    <Content Include="Resources_Design\MZ\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\MZ\Images\shadow.png" />
+    <Content Include="Resources_Design\MZ\Login.css" />
+    <Content Include="Resources_Design\PEDKADRI\Default.css" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Button_enter.png" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Button_profile.png" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Button_users.png" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Caption.png" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Exit.png" />
+    <Content Include="Resources_Design\PEDKADRI\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\PEDKADRI\Images\shadow.png" />
+    <Content Include="Resources_Design\PEDKADRI\Login.css" />
+    <Content Include="Resources_Design\UKO\Default.css" />
+    <Content Include="Resources_Design\UKO\Images\Button_analitic.jpg" />
+    <Content Include="Resources_Design\UKO\Images\Button_enter.png" />
+    <Content Include="Resources_Design\UKO\Images\Button_forms.jpg" />
+    <Content Include="Resources_Design\UKO\Images\Button_profile.png" />
+    <Content Include="Resources_Design\UKO\Images\Button_uchr.png" />
+    <Content Include="Resources_Design\UKO\Images\Button_users.png" />
+    <Content Include="Resources_Design\UKO\Images\Caption.png" />
+    <Content Include="Resources_Design\UKO\Images\Exit.png" />
+    <Content Include="Resources_Design\UKO\Images\Login_background.jpg" />
+    <Content Include="Resources_Design\UKO\Images\shadow.png" />
+    <Content Include="Resources_Design\UKO\Login.css" />
+    <None Include="bin\ads.ini" />
+    <None Include="bin\adslocal.cfg" />
+    <None Include="bin\ansi.chr" />
+    <None Include="bin\extend.chr" />
+    <None Include="bin\Сервер\ИсходныеТексты\Приложение\Администрирование\ОтчетЭЦП\%28Отчет%29.СписокСертификатовЭЦП.xls" />
+    <None Include="bin\Сервер\ИсходныеТексты\Приложение\ОтчетнаяФорма\ПечатнаяФорма\%28Отчет%29.ПечатнаяФормаОтчета.xls" />
+    <None Include="bin\Сервер\ИсходныеТексты\Приложение\ОтчетнаяФорма\Увязки\ПечатнаяФорма\%28Отчет%29.ПечатнаяФормаРезультатовПроверкиУвязок.xls" />
+    <None Include="bin\Сервер\ИсходныеТексты\Приложение\СдачаОтчетности\Абонентский пункт\БланкАбонентскогоПункта.xls" />
+    <None Include="bin\Сервер\ИсходныеТексты\Приложение\Ядро\ЛогСверкиДанных\%28Отчет%29.ОтчетЛогСверкиДанных.xls" />
+    <None Include="bin\Сервер\ИсходныеТексты\Приложение\Ядро\ПротоколВыполненияОперации\%28Отчет%29.ПечатнаяФормаПротоколаВыполненияОперации.xls" />
+    <None Include="bin\Сервер\ИсходныеТексты\Ядро\БазовыеСервисныеФункции\УниверсальныйОтчет\%28Отчет%29.УниверсальныйОтчет.xls" />
+    <None Include="bin\Сервер\ИсходныеТексты\Ядро\Интерфейс\СлужебныеФормы\ПроизвольнаяПечатьТаблицы\%28Отчет%29.ОтчетПроизвольнаяПечатьТаблицы.xls" />
+    <None Include="Resources\fp_scripts\fpspread\3_0_2008_2005\img\Thumbs.db" />
+    <None Include="Resources\RadControls\Menu\Skins\Office2007\img\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Сервер\ИсходныеТексты\Платформа\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>12345</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
