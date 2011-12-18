@@ -1,0 +1,13 @@
+D:\dev\БАРС.Клиент\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.Properties.Resources.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Интерфейс.ДиалогВводаСтроки.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Интерфейс.ДиалогВыбораКаталога.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.ФормаКомпилятора.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.ОкноИсключения.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.ОкноПриветствияБарс.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.СообщениеКлиенту.ОкноСообщения.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.СообщениеКлиенту.ОкноСообщенияЧерезБД.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.ФормаНастройкиПанелиБыстрогоЗапуска.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.ФормаПоказаИсключительнойСитуации.resources
+D:\dev\БАРС.Клиент\obj\Debug\Барс.Клиент.ФормаПроцессаОбновленияСистемы.resources
+D:\dev\БАРС.Клиент\obj\Debug\БарсКлиент.csproj.GenerateResource.Cache

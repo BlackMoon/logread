@@ -1,0 +1,232 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A5D9C22-D7AD-4296-92D1-280BF3500FAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Барс.Клиент</RootNamespace>
+    <AssemblyName>БарсКлиент</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>Resources\Барс.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\БарсКлиент.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\РазделяемыеБиблиотеки\Oracle.DataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="БарсЛокализация, Version=1.0.0.7550, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\БарсЛокализация.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсМенеджерКонфигурации, Version=1.0.0.6975, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\БарсМенеджерКонфигурации.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсПриложение, Version=2.2.0.2363, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\БарсПриложение.dll</HintPath>
+    </Reference>
+    <Reference Include="БарсРесурсы, Version=1.0.0.1866, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\БарсРесурсы.dll</HintPath>
+    </Reference>
+    <Reference Include="ИнтерфейсСервераАутентификации, Version=1.0.0.4054, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\РазделяемыеБиблиотеки\РабочаяВерсия\ИнтерфейсСервераАутентификации.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ГлавноеОкно.cs">
+    </Compile>
+    <Compile Include="ГлавноеОкно.Designer.cs">
+      <DependentUpon>ГлавноеОкно.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ГлавноеОкно.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ГлавноеОкно.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ДиалогВводаСтроки\ДиалогВводаСтроки.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ДиалогВводаСтроки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ДиалогВыбораКаталога\ДиалогВыбораКаталога.resx">
+      <DependentUpon>ДиалогВыбораКаталога.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ФормаКомпилятора.resx">
+      <DependentUpon>ФормаКомпилятора.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ОкноИсключения.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ОкноИсключения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ОкноПриветствияБарс.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ОкноПриветствияБарс.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="СообщениеКлиенту\ОкноСообщения.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ОкноСообщения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="СообщениеКлиентуЧерезБД\ОкноСообщенияЧерезБД.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ОкноСообщенияЧерезБД.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ФормаНастройкиПанелиБыстрогоЗапуска.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ФормаНастройкиПанелиБыстрогоЗапуска.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ФормаПоказаИсключительнойСитуации.resx">
+      <DependentUpon>ФормаПоказаИсключительнойСитуации.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ФормаПроцессаОбновленияСистемы.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ФормаПроцессаОбновленияСистемы.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ДиалогВводаСтроки\ДиалогВводаСтроки.cs">
+    </Compile>
+    <Compile Include="ДиалогВводаСтроки\ДиалогВводаСтроки.Designer.cs">
+      <DependentUpon>ДиалогВводаСтроки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ДиалогВыбораКаталога\ДиалогВыбораКаталога.cs">
+    </Compile>
+    <Compile Include="ДиалогВыбораКаталога\ДиалогВыбораКаталога.Designer.cs">
+      <DependentUpon>ДиалогВыбораКаталога.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ДиалогВыбораКаталога\ЭлементДереваКаталогов.cs" />
+    <Compile Include="ЗагрузкаИсходногоТекстаССервера.cs" />
+    <Compile Include="GUI\ФормаКомпилятора.cs">
+    </Compile>
+    <Compile Include="МенюГлавногоОкна.cs" />
+    <Compile Include="НастольноеПриложение.cs" />
+    <Compile Include="ОкноИсключения.cs">
+    </Compile>
+    <Compile Include="ОкноИсключения.Designer.cs">
+      <DependentUpon>ОкноИсключения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ОкноПриветствияБарс.cs">
+    </Compile>
+    <Compile Include="ОкноПриветствияБарс.Designer.cs">
+      <DependentUpon>ОкноПриветствияБарс.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Системное\ПотокиПриложения.cs" />
+    <Compile Include="СообщениеКлиенту\IСообщениеКлиенту.cs" />
+    <Compile Include="СообщениеКлиенту\ОкноСообщения.cs">
+    </Compile>
+    <Compile Include="СообщениеКлиенту\ОкноСообщения.Designer.cs">
+      <DependentUpon>ОкноСообщения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="СообщениеКлиенту\СерверСообщений.cs" />
+    <Compile Include="СообщениеКлиентуЧерезБД\ОкноСообщенияЧерезБД.cs">
+    </Compile>
+    <Compile Include="СообщениеКлиентуЧерезБД\ОкноСообщенияЧерезБД.Designer.cs">
+      <DependentUpon>ОкноСообщенияЧерезБД.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ФормаНастройкиПанелиБыстрогоЗапуска.cs">
+    </Compile>
+    <Compile Include="ФормаНастройкиПанелиБыстрогоЗапуска.Designer.cs">
+      <DependentUpon>ФормаНастройкиПанелиБыстрогоЗапуска.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ФормаПоказаИсключительнойСитуации.cs">
+    </Compile>
+    <Compile Include="ФормаПоказаИсключительнойСитуации.Designer.cs">
+      <DependentUpon>ФормаПоказаИсключительнойСитуации.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ФормаПроцессаОбновленияСистемы.cs">
+    </Compile>
+    <Compile Include="ФормаПроцессаОбновленияСистемы.Designer.cs">
+      <DependentUpon>ФормаПроцессаОбновленияСистемы.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Барс.ico" />
+    <None Include="Предупреждение.png" />
+    <None Include="Resources\Предупреждение.png" />
+    <None Include="Resources\Старт.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
