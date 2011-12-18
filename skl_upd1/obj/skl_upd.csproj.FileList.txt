@@ -1,0 +1,5 @@
+bin\Debug\skl_upd.exe
+bin\Debug\skl_upd.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\skl_upd.exe
+obj\Debug\skl_upd.pdb
