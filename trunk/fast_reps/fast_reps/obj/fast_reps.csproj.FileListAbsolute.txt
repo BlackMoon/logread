@@ -1,0 +1,9 @@
+D:\dev\fast_reps\fast_reps\bin\Debug\fast_reps.exe.config
+D:\dev\fast_reps\fast_reps\bin\Debug\fast_reps.exe
+D:\dev\fast_reps\fast_reps\bin\Debug\fast_reps.pdb
+D:\dev\fast_reps\fast_reps\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\fast_reps\fast_reps\obj\Debug\fast_reps.Form1.resources
+D:\dev\fast_reps\fast_reps\obj\Debug\fast_reps.Properties.Resources.resources
+D:\dev\fast_reps\fast_reps\obj\Debug\fast_reps.csproj.GenerateResource.Cache
+D:\dev\fast_reps\fast_reps\obj\Debug\fast_reps.exe
+D:\dev\fast_reps\fast_reps\obj\Debug\fast_reps.pdb
