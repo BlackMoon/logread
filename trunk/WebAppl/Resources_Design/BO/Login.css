@@ -1,0 +1,100 @@
+﻿/* Main elements */
+
+html, body{
+	height:100%;
+	width: 100%;
+}
+
+.LoginPageBody
+{
+	font-size:small;
+	height:100%;
+}
+
+.LoginPanelWidth
+{
+	width: 500px;
+}
+
+.LoginPanelBackground
+{
+	background-image:url('./Images/Login_background.jpg');
+	background-repeat:no-repeat;
+	width: 500px;
+	height: 421px;
+	position:relative;
+	margin:auto;
+}
+
+/* Login */
+
+tr.LoginRow1
+{
+	height: 165px;
+}
+
+tr.LoginRow2
+{
+	height: 40px;
+}
+
+tr.LoginRow3
+{
+	height: 40px;
+}
+
+tr.LoginRow4
+{
+	height: 60px;
+}
+
+tr.LoginRow5
+{
+	height: 110px;
+}
+
+td.LoginCol1
+{
+	width:170px;
+}
+
+td.LoginCol2
+{
+	/*width:236px;*/
+}
+
+/* InpuBoxes */
+
+.TextBox
+{
+	border-style:inset;
+	font-size:medium;
+	color:#575350;
+	margin:0;
+	height:20px;
+	width:185px!important;
+	-x-system-font:none;
+	background:white none repeat scroll 0 0;
+	
+	font-family:Arial,Verdana,Sans-Serif;
+	font-size:12px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	vertical-align:middle;
+	
+	border:1px solid #7F9DB9;
+}
+
+#tb_User_text
+{
+	border-style:inset;
+	font-size:medium;
+	color:#575350;
+	margin:0;
+	height:20px;
+	width:185px!important;
+}

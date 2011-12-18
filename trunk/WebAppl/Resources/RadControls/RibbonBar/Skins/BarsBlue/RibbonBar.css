@@ -1,0 +1,608 @@
+/* General */
+
+body 
+{
+	background-color: #97B7E1;
+}
+
+.ribbonBarCheckBox label,
+.ribbonBarLabel,
+.ribbonBarLabelTitle
+{
+	font-size: 8pt;
+	color: #3E6AAA;
+	vertical-align: middle;
+}
+
+.ribbonBarLabelTitle
+{
+	font-weight: bold;
+}
+
+.ribbonBarTextBox
+{
+	border: solid 1px #3E6AAA;
+}
+
+.ajaxLoading
+{
+	margin-top: 9px;
+	margin-left: -1px;
+}
+
+/* Page */
+
+.pageBackground
+{
+	position: relative;
+	top: 10px;
+	clear: both;
+	margin: 0px 18px 18px 18px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	border: solid 1px #646464;
+	min-height: 400px;
+}
+
+.pageTitle
+{
+	font-size: 16pt;
+	font-weight: bold;
+	color: #A9A9A9;
+}
+
+.pageSubTitle
+{
+	font-size: 12pt;
+	font-weight: bold;
+	color: #A9A9FF;
+}
+
+.plainText
+{
+	font-size: 10pt;
+	color: #000000;
+}
+
+
+/* Application Bar */
+
+.applicationBar
+{
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+	background: url('ApplicationBar.gif') repeat-x;
+}
+
+.applicationBarStart
+{
+	width: 40px;
+	height: 30px;
+	float: left;
+}
+
+.applicationBarText
+{
+	text-align: center; 
+	white-space: nowrap;
+	font-size: 13px;
+}
+
+.quickAccessCustomizeButton,
+.quickAccessCustomizeButton:Hover
+{
+	width: 13px;
+	height: 30px;
+	background: url('QuickAccessCustomizeButton.gif') no-repeat;
+	float: left;
+	margin-left: 4px;
+}
+
+.quickAccessCustomizeButton:Hover
+{
+	background: url('QuickAccessCustomizeButtonHover.gif') no-repeat !important;
+	cursor: pointer;
+}
+
+
+/* Application Menu */
+
+.applicationMenu
+{
+	position: absolute;
+	left: 7px;
+	top: 36px;
+	z-index: 10;
+}
+
+/* Quick Access Ribbon Button */
+
+.quickAccessStart
+{
+	width: 16px;
+	height: 30px;
+	overflow: hidden;
+	background: url('QuickAccessStart.gif') no-repeat;
+	float: left;
+}
+
+.quickAccessPlaceHolder
+{
+	height: 30px;
+	background: url('QuickAccessItem.gif') repeat-x;
+	float: left;
+}
+
+.quickAccessButton
+{
+	width: 21px;
+	height: 30px;
+	overflow: hidden;
+	float: left;
+}
+
+.quickAccessButton img
+{
+	margin-left: 2px;
+	margin-top: 7px;
+}
+
+.quickAccessButtonHover
+{
+	width: 21px;
+	height: 30px;
+	background: url('QuickAccessButtonHover.gif') no-repeat;
+	float: left;
+	cursor: pointer;
+}
+
+.quickAccessButtonHover img,
+.quickAccessButtonChecked img
+{
+	margin-left: 2px;
+	margin-top: 7px;
+}
+
+.quickAccessButtonChecked
+{
+	width: 21px;
+	height: 30px;
+	background: url('QuickAccessButtonChecked.gif') no-repeat;
+	float: left;
+}
+
+.quickAccessEnd
+{
+	width: 10px;
+	height: 30px;
+	background: url('QuickAccessEnd.gif') no-repeat;
+	float: left;
+}
+
+.applicationBarName
+{
+	vertical-align:top;
+	height: 30px;
+}
+
+/* Ribbon Bar */
+
+.ribbonBar
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	height: 93px;
+	overflow: hidden;
+	background: url('RibbonBarItem.gif') repeat-x;
+}
+
+.ribbonBarClosed
+{	
+	position: absolute;
+	left: 0px;
+	top: 56px;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.ribbonBarFloat
+{	
+	position: absolute;
+	left: 0px;
+	top: 56px;
+	height: 93px;
+	overflow: hidden;
+	background: url('RibbonBarItem.gif') repeat-x;
+	z-index: 10;
+}
+
+/* Ribbon Group */
+
+.ribbonGroupContainer
+{
+	margin-top: 3px;
+	margin-left: 3px;
+	height: 85px;
+	overflow: hidden;
+	float: left;
+}
+
+.ribbonGroupStart
+{
+	width: 3px;
+	height: 85px;
+	background: url('RibbonGroupStart.gif') no-repeat;
+}
+
+.ribbonGroupItem
+{
+	height: 85px;
+	background: url('RibbonGroupItem.gif') repeat-x;
+}
+
+.ribbonGroupEnd
+{
+	width: 2px;
+	height: 85px;
+	background: url('RibbonGroupEnd.gif') no-repeat;
+}
+
+.ribbonGroupPlaceHolder
+{
+	height:	70px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.ribbonGroupText
+{
+	height: 15px;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	color: #203B78;
+}
+
+
+/* Ribbon Group Items */
+
+.ribbonGroupBlock
+{
+	height: 66px;
+	float: left;
+	white-space: nowrap;
+	margin: 2px 2px 0px 2px;
+}
+
+.ribbonGroupBlockThird
+{
+	height: 22px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.ribbonGroupBlockHalf
+{
+	height: 22px;
+	white-space: nowrap;
+	vertical-align: middle;
+	padding-top: 8px;
+}
+
+.ribbonGroupBlockFull
+{
+	height: 66px;
+	white-space: nowrap;
+	vertical-align: Top;
+}
+
+
+/* Ribbon Separator */
+
+.ribbonSeparator
+{
+	width: 2px;
+	height: 70px;
+	background: url('RibbonSeparator.gif') no-repeat;
+	float: left;
+}
+
+
+/* Large Ribbon Button */
+
+.largeRibbonButton
+{	
+	float: left;
+	height: 70px;
+	margin-right: 1px;
+	overflow: hidden;
+}
+
+.largeRibbonButtonStart
+{
+	width: 2px;
+	height: 70px;
+	float: left;
+}
+
+.largeRibbonButtonItem
+{
+	height: 70px;
+	float: left;
+	cursor: default;
+}
+
+.largeRibbonButtonEnd
+{
+	width: 2px;
+	height: 70px;
+	float: left;
+}
+
+.largeRibbonButtonStartHover
+{
+	width: 2px;
+	height: 70px;
+	background: url('LargeRibbonButtonStartHover.gif') no-repeat;
+	float: left;
+	cursor: pointer;
+}
+
+.largeRibbonButtonItemHover
+{
+	height: 70px;
+	background: url('LargeRibbonButtonItemHover.gif') repeat-x;
+	cursor: pointer;
+	float: left;
+}
+
+.largeRibbonButtonEndHover
+{
+	width: 2px;
+	height: 70px;
+	background: url('LargeRibbonButtonEndHover.gif') no-repeat;
+	float: left;
+	cursor: pointer;
+}
+
+.largeRibbonButtonStartChecked
+{
+	width: 2px;
+	height: 70px;
+	background: url('LargeRibbonButtonStartChecked.gif') no-repeat;
+	float: left;
+}
+
+.largeRibbonButtonItemChecked
+{
+	height: 70px;
+	background: url('LargeRibbonButtonItemChecked.gif') repeat-x;
+	float: left;
+}
+
+.largeRibbonButtonEndChecked
+{
+	width: 2px;
+	height: 70px;
+	background: url('LargeRibbonButtonEndChecked.gif') no-repeat;
+	float: left;
+}
+
+.largeRibbonButtonImage
+{
+	height: 32px;
+	text-align: center;
+	border: 0px;
+	padding-top: 6px;
+}
+
+.largeRibbonButtonText,
+.largeRibbonButtonTextDisabled
+{
+	height: 32px;
+	text-align: center;
+	margin-left: 1px;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #3E6AAA;
+	white-space: normal;
+}
+
+.largeRibbonButtonTextDisabled
+{
+	color: #B9C4D5 !important;
+}
+
+.largeRibbonButtonDropDownMenuArrow,
+.largeRibbonButtonDropDownMenuArrowDisabled
+{
+	width: 5px;
+	height: 4px;
+	top: -13px;
+	position: relative;
+	z-index: 2;
+	background: url('DropDownMenuArrow.gif') no-repeat;
+}
+
+.largeRibbonButtonDropDownMenuArrowDisabled
+{
+	background: url('DropDownMenuArrowDisabled.gif') no-repeat !important;
+}
+
+
+/* Small Ribbon Button */
+
+.smallRibbonButton
+{	
+	float: left;
+	height: 22px;
+	overflow: hidden;
+	clear: both;
+}
+
+.smallRibbonButtonStart
+{
+	width: 2px;
+	height: 22px;
+	float: left;
+}
+
+.smallRibbonButtonItem
+{
+	height: 22px;
+	float: left;
+	cursor: default;
+}
+
+.smallRibbonButtonEnd
+{
+	width: 2px;
+	height: 22px;
+	float: left;
+}
+
+.smallRibbonButtonStartHover
+{
+	width: 2px;
+	height: 22px;
+	background: url('SmallRibbonButtonStartHover.gif') no-repeat;
+	float: left;
+	cursor: pointer;
+}
+
+.smallRibbonButtonItemHover
+{
+	height: 22px;
+	background: url('SmallRibbonButtonItemHover.gif') repeat-x;
+	cursor: pointer;
+	float: left;
+}
+
+.smallRibbonButtonEndHover
+{
+	width: 2px;
+	height: 22px;
+	background: url('SmallRibbonButtonEndHover.gif') no-repeat;
+	float: left;
+	cursor: pointer;
+}
+
+.smallRibbonButtonStartChecked
+{
+	width: 2px;
+	height: 22px;
+	background: url('SmallRibbonButtonStartChecked.gif') no-repeat;
+	float: left;
+}
+
+.smallRibbonButtonItemChecked
+{
+	height: 22px;
+	background: url('SmallRibbonButtonItemChecked.gif') repeat-x;
+	float: left;
+}
+
+.smallRibbonButtonEndChecked
+{
+	width: 2px;
+	height: 22px;
+	background: url('SmallRibbonButtonEndChecked.gif') no-repeat;
+	float: left;
+}
+
+.smallRibbonButtonImage
+{
+	height: 16px;
+	border: 0px;
+	padding-left: 1px;
+	padding-top: 3px;
+	float: left;
+}
+
+.smallRibbonButtonText,
+.smallRibbonButtonTextDisabled
+{
+	float: left;
+	height: 22px;
+	padding-left: 4px;
+	padding-top: 4px;
+	font-family: Arial;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #3E6AAA;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.smallRibbonButtonTextDisabled
+{
+	color: #B9C4D5 !important;
+}
+
+.smallRibbonButtonDropDownMenuArrow,
+.smallRibbonButtonDropDownMenuArrowDisabled
+{
+	width: 5px;
+	height: 4px;
+	top: 9px;
+	position: relative;
+	margin-left: auto; 
+	margin-right: 4px;
+	z-index: 2;
+	background: url('DropDownMenuArrow.gif') no-repeat;
+}
+
+.smallRibbonButtonDropDownMenuArrowDisabled
+{
+	background: url('DropDownMenuArrowDisabled.gif') no-repeat !important;
+}
+
+
+/* Telerik Menus */
+
+.RadMenu_Office2007
+{
+	padding: 0px !important;
+}
+
+.RadMenu_Office2007 .text
+{
+	padding: 0px !important;
+}
+
+.RadMenu_Office2007 .link img
+{
+	margin: 0px;
+	cursor: hand;
+}
+
+.RadMenu_Office2007 .link:hover,
+.RadMenu_Office2007 .focused,
+.RadMenu_Office2007 .expanded
+{
+	border: 0px !important;
+}
+
+.office2007_radtoolbar_horizontal img
+{
+	margin-left: 5px !important;
+	margin-top: 3px;
+}
+
+.RadMenu_Outlook .group
+{
+	border: 1px solid #868686 !important;
+	background: #F6F6F6 url(OutlookMenuGroupBackground.gif) repeat-y !important;
+}
+
+.RadMenu_Outlook .group .link:hover,
+.RadMenu_Outlook .group .focused,
+.RadMenu_Outlook .group .expanded
+{
+	background: url(OutlookMenuGroupBackgroundFocused.gif) left top repeat-x !important;
+	border: 1px solid #DBCE99 !important;
+}

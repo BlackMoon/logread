@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localization>
+  <string id="Description">Описание</string>
+  <string id="Empty">Нет выбранных файлов.</string>
+  <string id="File">Файл</string>
+  <string id="Title">Заголовок</string>
+</localization>
