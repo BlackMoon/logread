@@ -1,0 +1,5 @@
+D:\dev\zenit\zserv\zserv\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\dev\zenit\zserv\zserv\bin\Debug\zserv.exe
+D:\dev\zenit\zserv\zserv\bin\Debug\zserv.pdb
+D:\dev\zenit\zserv\zserv\obj\x86\Debug\zserv.exe
+D:\dev\zenit\zserv\zserv\obj\x86\Debug\zserv.pdb

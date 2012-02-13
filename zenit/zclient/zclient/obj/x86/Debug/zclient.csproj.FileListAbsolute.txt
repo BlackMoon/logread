@@ -1,0 +1,9 @@
+D:\dev\zenit\zclient\zclient\bin\Debug\zclient.exe
+D:\dev\zenit\zclient\zclient\bin\Debug\zclient.pdb
+D:\dev\zenit\zclient\zclient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\dev\zenit\zclient\zclient\obj\x86\Debug\zclient.Form1.resources
+D:\dev\zenit\zclient\zclient\obj\x86\Debug\zclient.Properties.Resources.resources
+D:\dev\zenit\zclient\zclient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\dev\zenit\zclient\zclient\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\dev\zenit\zclient\zclient\obj\x86\Debug\zclient.exe
+D:\dev\zenit\zclient\zclient\obj\x86\Debug\zclient.pdb
