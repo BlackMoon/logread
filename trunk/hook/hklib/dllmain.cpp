@@ -2,7 +2,9 @@
 #include "stdafx.h"
 #include <tlhelp32.h>
 
-HHOOK call_hhook = 0;
+bool bActive = 0;
+HHOOK cbt_hhook = 0;
+
 
 DWORD GetModuleThreadId(DWORD processID)
 {
@@ -42,7 +44,22 @@ LRESULT CALLBACK CBTProc(int nCode, WPARAM wParam, LPARAM lParam)
 			pcs->y = 0;	
 			pcs->cy = 600;
 		}
-	}	
+	}
+
+	if (nCode == HCBT_ACTIVATE)
+	{
+		HWND hwnd = (HWND)wParam;
+        WCHAR buff[MAX_PATH];
+        GetWindowText(hwnd, buff, MAX_PATH);
+		if (wcscmp(buff, L"hkproc") == 0)
+        { 
+			if (!bActive)
+			{
+				ShowWindow(hwnd, SW_MAXIMIZE);
+				bActive = true;
+			}
+		}
+	}
 	return CallNextHookEx(0, nCode, wParam, lParam);
 }
 
@@ -57,15 +74,15 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 		{
 			DWORD dwProcessId = GetCurrentProcessId(),
 				  dwThreadId = GetModuleThreadId(dwProcessId);
-
-			call_hhook = SetWindowsHookEx(WH_CBT, CBTProc, hModule, dwThreadId);				         
+									         
+			cbt_hhook = SetWindowsHookEx(WH_CBT, CBTProc, hModule, dwThreadId);				         
 			
 		}
 		break;
 	case DLL_THREAD_ATTACH:
 	case DLL_THREAD_DETACH:
 	case DLL_PROCESS_DETACH:
-		UnhookWindowsHookEx(call_hhook);
+		UnhookWindowsHookEx(cbt_hhook);		
 		break;
 	}
 	return TRUE;
