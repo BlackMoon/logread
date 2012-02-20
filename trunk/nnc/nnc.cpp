@@ -56,19 +56,21 @@ LRESULT WINAPI DialogProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 					sprintf_s(file, MAX_PATH, "%s_%d_%d.txt", NNC, z1, z2); 
 					
 					FILE* stream;
-					fopen_s(&stream, file, "wt");
-				
-					for (i = 1; i < nx + 1; i++)
-					{
-						for (j = 1; j < ny + 1; j++)
+					if (0 == fopen_s(&stream, file, "wt")) {				
+						for (i = 1; i < nx + 1; i++)
 						{
-							fprintf_s(stream, "%d\t%d\t%d\t\t\t%d\t%d\t%d\t%.3f\n", i, j, z1, i, j, z2, tran); 
+							for (j = 1; j < ny + 1; j++)
+							{
+								fprintf_s(stream, "%d\t%d\t%d\t\t\t%d\t%d\t%d\t%.3f\n", i, j, z1, i, j, z2, tran); 
+							}
 						}
-					}
-					fprintf_s(stream, "/"); 
+						fprintf_s(stream, "/"); 
 
-					fclose(stream);
-					MessageBox(hWnd, "OK", NNC, MB_ICONINFORMATION | MB_OK);
+						fclose(stream);						
+						sprintf_s(line, 16, "Ok");
+					}
+					else sprintf_s(line, 16, "Failed"); 
+					MessageBox(hWnd, line, NNC, MB_ICONINFORMATION | MB_OK);
 				}
 				return 1;
 			}				
