@@ -1,0 +1,7 @@
+D:\dev\fix\fix\bin\fix.dll
+D:\dev\fix\fix\bin\fix.pdb
+D:\dev\fix\fix\bin\EntityFramework.dll
+D:\dev\fix\fix\bin\EntityFramework.xml
+D:\dev\fix\fix\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\fix\fix\obj\Debug\fix.dll
+D:\dev\fix\fix\obj\Debug\fix.pdb
