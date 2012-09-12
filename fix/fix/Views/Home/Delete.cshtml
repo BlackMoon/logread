@@ -1,0 +1,36 @@
+﻿@if(!Request.IsAuthenticated) {
+    Response.Redirect("~/");
+}
+
+@model fix.Models.fx_doc
+
+@{
+    ViewBag.Title = "Удалить";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Удалить документ?</h3>
+<fieldset>
+    <legend></legend>
+
+    <div class="display-label">Наименование</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">Дата</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.date)
+    </div>
+
+    <div class="display-label">Автор</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.author)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Удалить" />         
+    </p>
+    @Html.ActionLink("Назад", "Index")
+}

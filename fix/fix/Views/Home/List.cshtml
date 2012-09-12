@@ -1,0 +1,24 @@
+﻿@model IEnumerable<fix.Models.fx_doc>
+<tr>
+    <td>
+        @Html.DisplayFor(model => model.name)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.date)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => mnodelm.author)
+    </td>
+    <td align="center">
+        @{                      string url = "Docs/" + item.name;      
+        }
+        <a href="@url">
+            <img title = "Загрузить" src=@Url.Content("../Content/att_4535.png") />
+        </a>
+    </td>
+    <td align="center">
+        <a href="@Url.Action("Delete", "Home", new { id = item.id })">
+            <img title ="Удалить" src=@Url.Content("../Content/del_8207.png") />
+        </a>
+    </td>
+</tr>

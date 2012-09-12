@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fixdbModelStoreContainer" CdmEntityContainer="fixdb">
+    <EntitySetMapping Name="fx_docs">
+      <EntityTypeMapping TypeName="fixdbModel.fx_doc">
+        <MappingFragment StoreEntitySet="fx_docs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="fixdbModel.fx_doc">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="fixdbModel.Store.Doc_CreateNew">
+            <ScalarProperty Name="author" ParameterName="author" />
+            <ScalarProperty Name="name" ParameterName="name" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="createNew" FunctionName="fixdbModel.Store.Doc_CreateNew" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fixdbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="fixdb" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="fx_docs" EntityType="fixdbModel.fx_doc" />
+    <FunctionImport Name="createNew">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="author" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="fx_doc">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" />
+    <Property Name="author" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

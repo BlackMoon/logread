@@ -1,0 +1,104 @@
+﻿@using fix.Controllers;
+@if (!Request.IsAuthenticated)
+{
+    Response.Redirect("~/");
+}
+@model IEnumerable<fix.Models.fx_doc>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+<h2>
+    <p>
+        @Html.ActionLink("Создать", "Create")
+    </p>
+</h2>
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <p>
+        <input type="text" id="query" name="query" />
+        <input type="submit" value="Поиск" />                
+    </p>    
+}
+@{
+    eOrder ord1 = (ViewData["ord1"] != null) ? (eOrder)ViewData["ord1"] : eOrder.ordASC,
+           ord2 = (ViewData["ord2"] != null) ? (eOrder)ViewData["ord2"] : eOrder.ordASC,
+           ord3 = (ViewData["ord3"] != null) ? (eOrder)ViewData["ord3"] : eOrder.ordASC;
+}
+<table width="800">
+    <tr>
+        <th>
+            @Html.ActionLink("Наименование", "Index", "Home", new { param = "name", ord = @ord1 }, null)
+            @if ((string)ViewData["sort"] == "name")
+            {
+                if (ord1 == eOrder.ordASC)
+                {
+                <span>&or; </span>;
+                }
+                else
+                {
+                <span>&and; </span>;
+                }
+            }
+        </th>
+        <th>
+            @Html.ActionLink("Дата", "Index", "Home", new { param = "date", ord = @ord2 }, null)
+            @if ((string)ViewData["sort"] == "date")
+            {
+                if (ord2 == eOrder.ordASC)
+                {
+                <span>&or; </span>;
+                }
+                else
+                {
+                <span>&and; </span>;
+                }
+            }
+        </th>
+        <th width="200">
+            @Html.ActionLink("Автор", "Index", "Home", new { param = "author", ord = @ord3 }, null)
+            @if ((string)ViewData["sort"] == "author")
+            {
+                if (ord3 == eOrder.ordASC)
+                {
+                <span>&or; </span>;
+                }
+                else
+                {
+                <span>&and; </span>;
+                }
+            }
+        </th>
+        <th>
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.author)
+            </td>
+            <td align="center">
+                @{                      string url = "/Docs/" + item.name;      
+                }
+                <a href="@url">
+                    <img title = "Загрузить" src=@Url.Content("../Content/att_4535.png") />
+                </a>
+            </td>
+            <td align="center">
+                <a href="@Url.Action("Delete", "Home", new { id = item.id })">
+                    <img title ="Удалить" src=@Url.Content("../Content/del_8207.png") />
+                </a>
+            </td>
+        </tr>
+    }
+</table>
